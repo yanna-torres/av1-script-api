@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
 
@@ -43,6 +43,11 @@ def number_exists(number_to_check):
         json.dump(data, file, indent=4)
 
     return accessed_count
+
+@app.route('/')
+def index():
+    return send_from_directory('.', 'index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
