@@ -47,7 +47,3 @@ def number_exists(number_to_check):
 @app.route('/')
 def index():
     return send_from_directory('.', 'index.html')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
