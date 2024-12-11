@@ -2,6 +2,8 @@
 
 This is a simple Flask API that tracks the number of times a specific number has been accessed. The data is stored in a JSON file.
 
+You can access the application at [https://av1-script-api.onrender.com/](https://av1-script-api.onrender.com/) (there is a possibility that the Render server used may be down, taking a while to restart).
+
 ## Setup
 
 1. Clone the repository.
