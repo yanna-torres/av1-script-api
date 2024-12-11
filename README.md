@@ -25,11 +25,16 @@ This is a simple Flask API that tracks the number of times a specific number has
 
 ## Running the API
 
-1. Start the Flask server:
+1. On th `main.py` file include at the end the following code:
+   ```python
+   if __name__ == '__main__':
+       app.run(debug=True)
+   ```
+3. Start the Flask server:
     ```sh
     python main.py
     ```
-2. The API will be available at `http://127.0.0.1:5000`.
+4. The API will be available at `http://127.0.0.1:5000`.
 
 ## API Endpoints
 
